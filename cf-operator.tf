@@ -10,7 +10,7 @@ resource "helm_release" "cf-operator" {
   chart      = "cf-operator"
   wait       = "true"
   namespace  = "cf-operator"
-  version    = "4.5.6+0.gffc6f942"
+  version    = var.cf-operator-version
 
   set {
     name  = "global.operator.watchNamespace"

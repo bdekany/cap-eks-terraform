@@ -8,7 +8,7 @@ resource "helm_release" "kubecf" {
   repository = "https://kubernetes-charts.suse.com/"
   chart      = "kubecf"
   namespace  = "kubecf"
-  version = "2.2.2"
+  version = var.kubecf-version
 
   set {
     name = "credentials.cf_admin_password"
