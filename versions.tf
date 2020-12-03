@@ -3,6 +3,10 @@ terraform {
   required_version = ">= 0.12"
 }
 
+provider "time" {
+ version = "~> 0.6"
+}
+
 provider "random" {
   version = "~> 2.1"
 }

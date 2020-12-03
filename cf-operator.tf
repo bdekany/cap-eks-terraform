@@ -13,7 +13,7 @@ resource "helm_release" "cf-operator" {
   version    = var.cf-operator-version
 
   set {
-    name  = "global.operator.watchNamespace"
+    name  = "global.singleNamespace.name"
     value = "kubecf"
   }
 
