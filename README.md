@@ -1,5 +1,6 @@
 # Terraform - Provision an EKS Cluster + SUSE CAP 2.0 (with nginx-ingress)
 
+<<<<<<< HEAD
 This simple Terraform will provision:
 
  - EKS cluster on 5 t3.medium nodes
@@ -82,3 +83,7 @@ $ kubectl get nodes
 ```shell
 $ terraform import random_password.password securepassword
 ```
+=======
+This repo is a companion repo to the [Provision an EKS Cluster learn guide](https://learn.hashicorp.com/terraform/kubernetes/provision-eks-cluster), containing
+Terraform configuration files to provision an EKS cluster on AWS.
+>>>>>>> remotes/hashi/master
