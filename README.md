@@ -1,11 +1,10 @@
-# Terraform - Provision an EKS Cluster + SUSE CAP 2.0 (with nginx-ingress)
+# Terraform - Provision an EKS Cluster + SUSE EPINIO
 
-<<<<<<< HEAD
 This simple Terraform will provision:
 
  - EKS cluster on 5 t3.medium nodes
- - Create a .xip.io based on LB public IP
- - Helm install CAP 2.0
+ - Create a .nip.io based on LB public IP
+ - Run epinio install
 
 ## Before starting
 
@@ -83,7 +82,6 @@ $ kubectl get nodes
 ```shell
 $ terraform import random_password.password securepassword
 ```
-=======
-This repo is a companion repo to the [Provision an EKS Cluster learn guide](https://learn.hashicorp.com/terraform/kubernetes/provision-eks-cluster), containing
-Terraform configuration files to provision an EKS cluster on AWS.
->>>>>>> remotes/hashi/master
+
+## IAM Roles
+https://github.com/terraform-aws-modules/terraform-aws-eks/blob/master/docs/iam-permissions.md

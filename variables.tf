@@ -1,10 +1,4 @@
-variable "cf-operator-version" {
+variable "epinio_version" {
   type = string
-  default = "6.1.17+0.gec409fd7"
+  default = "v0.0.19"
 }
-
-variable "kubecf-version" {
-  type = string
-  default = "2.5.8"
-}
-
