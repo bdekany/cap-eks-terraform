@@ -1,4 +1,4 @@
 variable "epinio_version" {
   type = string
-  default = "v0.0.19"
+  default = "v0.0.20"
 }
